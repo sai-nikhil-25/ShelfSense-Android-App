@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addItems"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/food_name"
+        tools:ignore="Autofill,TextFields,TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/qtyInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantity"
+        android:minHeight="@dimen/min_height"
+        tools:ignore="Autofill,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="@string/expiry_date"
+        android:minHeight="@dimen/min_height"
+        tools:ignore="Autofill,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blush"
+        android:text="@string/save"
+        tools:ignore="VisualLintButtonSize" />
+
+    <ImageView
+        android:id="@+id/donateImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/contentDesc"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/donate"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/donateViewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/donateViewText"
+        android:textColor="@color/redPink"
+        android:textStyle="bold" />
+
+</LinearLayout>
